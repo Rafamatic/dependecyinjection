@@ -5,7 +5,7 @@ import { PowerService } from 'src/power/power.service';
 export class DiskService {
     constructor(private powerService: PowerService){}
     getData(){
-        console.log(`Drawing 20 watts of power from power service`);
+        console.log(`Drawing 20 watts of power from power service in disk service`);
         this.powerService.supplyPower(20);
         return `Data`;
     }
